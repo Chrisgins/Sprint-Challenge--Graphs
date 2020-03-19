@@ -28,6 +28,21 @@ player = Player(world.starting_room)
 # Fill this out with directions to walk
 # traversal_path = ['n', 'n']
 traversal_path = []
+reverse_path=[]
+
+# creating a fn that will return the reversed direction
+def r_direction(dir):
+    if dir == 'n':
+        return 's':
+    if dir == 's':
+        return 'n':
+    if dir == 'w':
+        return 'e':
+    if dir == 'e':
+        return 'w':    
+    else:
+        return "invalid"        
+
 
 
 
