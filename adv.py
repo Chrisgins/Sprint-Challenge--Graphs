@@ -33,13 +33,13 @@ reverse_path=[]
 # creating a fn that will return the reversed direction
 def r_direction(dir):
     if dir == 'n':
-        return 's':
+       return 's'
     if dir == 's':
-        return 'n':
+       return 'n'
     if dir == 'w':
-        return 'e':
+       return 'e'
     if dir == 'e':
-        return 'w':    
+       return 'w'    
     else:
         return "invalid"   
 
@@ -48,10 +48,10 @@ def r_direction(dir):
 rooms = {}
 
 # first room has the lists of exits
-rooms[player.curren_room.id] = player.current_room.get_exits()
+rooms[player.current_room.id] = player.current_room.get_exits()
 
 # if len of rooms hit < num of rooms in the graph -first room
-while len(room) < len(room_graph) -1:
+while len(rooms) < len(room_graph) -1:
     # if current room hasn't been visited
     if player.current_room.id not in rooms:
         # set the list of exits to room in visited dictionary
